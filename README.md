@@ -7,6 +7,11 @@
 
 Cliente FTP completo implementado en C que soporta operaciones concurrentes mediante hilos POSIX (pthreads). Permite la transferencia simultánea de múltiples archivos, así como la reanudación de descargas interrumpidas.
 
+## Consideraciones Iniciales
+- Cambio en vsftpd
+  - Asegurarse que el directorio home del usuario tenga permisos de escritura
+  - Configurar `allow_writeable_chroot=YES` en `/etc/vsftpd.conf`
+
 ## Características Principales
 
 ### Funcionalidades Básicas
